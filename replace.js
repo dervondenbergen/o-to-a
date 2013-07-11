@@ -16,8 +16,9 @@ function replace() {
         return result;
     }
     var textNodes = getNodesWithText(document.body);
-    for (var i = 0, l = textNodes.length; i < l; i++)
+    for (var i = 0, l = textNodes.length; i < l; i++){
     textNodes[i].innerText = textNodes[i].innerText.replace(/o/g, "a");
+    textNodes[i].innerText = textNodes[i].innerText.replace(/O/g, "A");}
 }
 
 replace()
