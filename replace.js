@@ -19,3 +19,5 @@ function replace() {
     for (var i = 0, l = textNodes.length; i < l; i++)
     textNodes[i].innerText = textNodes[i].innerText.replace(/o/g, "a");
 }
+
+replace()
